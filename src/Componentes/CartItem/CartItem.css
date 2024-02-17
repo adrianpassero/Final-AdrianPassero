@@ -1,0 +1,42 @@
+.cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.itemInfo {
+    flex: 1;
+}
+
+.itemTitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.itemCantidad, .itemPrecio {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.itemImagen img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.btnEliminar {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btnEliminar:hover {
+    background-color: #cc0000;
+}

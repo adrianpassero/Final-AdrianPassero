@@ -1,0 +1,39 @@
+.producto-container {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.producto-imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto-nombre {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.producto-id {
+    font-size: 1em;
+    color: #555;
+}
+
+.producto-precio {
+    font-size: 1.2em;
+    color: #FF4500;
+}
+
+.ver-detalles-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 18px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
