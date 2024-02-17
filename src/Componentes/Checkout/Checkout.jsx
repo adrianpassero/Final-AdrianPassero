@@ -1,5 +1,4 @@
 import { useState, useContext } from "react";
-import { Redirect } from "react-router-dom"
 import { CarritoContext } from "../../context/CarritoContext";
 import { db } from "../../services/config";
 import { collection, addDoc, updateDoc, getDoc, doc } from "firebase/firestore";
@@ -16,14 +15,7 @@ const Checkout = () => {
     const [emailConfirmacion, setEmailConfirmacion] = useState("");
     const [ordenId, setOrdenId] = useState("");
     const [error, setError] = useState("");
-    const [redirectToHome, setRedirectToHome] = useState(false); // Estado para redirigir al home
 
-    useEffect(() => {
-        // Si hay un ID de orden, redirige al home
-        if (ordenId) {
-            setRedirectToHome(true);
-        }
-    }, [ordenId]);
 
     const manejadorSubmit = (event) => {
         event.preventDefault();
@@ -94,10 +86,6 @@ const Checkout = () => {
         setEmail("");
         setEmailConfirmacion("");
         setError("");
-    }
-
-    if (redirectToHome) {
-        return <Redirect to="/" />;
     }
 
     return (
